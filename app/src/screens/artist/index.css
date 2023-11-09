@@ -1,0 +1,15 @@
+.artist-main-body{
+    width: 100%;
+    display: flex;
+    overflow-y: auto;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+/* searchbar shows on the top level of the page */
+.searchbar{
+    position: absolute;
+    top: 260px;
+    left: 300px;
+    z-index: 50;
+}

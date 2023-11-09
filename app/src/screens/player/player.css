@@ -1,0 +1,19 @@
+.left-player-body { 
+    width: 68%;
+    margin-right: 2%;
+    height: 100%;
+}
+.right-player-body {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+.player-screen-container{
+    background: linear-gradient(165deg, #D3959B 0%, #BFE6BA 100%);
+    width: calc(100% - 100px);
+    height: 100%; 
+    border-radius: 30px;
+    display: flex;
+}

@@ -1,0 +1,77 @@
+.showArtist{
+    height: 85%;
+    /* background use linear-gradient to realize Gradient effect, from #DBE6F6 to  #C5796D */
+    background: linear-gradient(90deg, #DBE6F6 0%, #C5796D 100%);
+    overflow-y: scroll;
+    display: flex;
+    /* Provide for flexible items to split rows or columns when necessary. */
+    flex-wrap: wrap;
+    padding-left: 80px;
+}
+
+/* Hide the scrollbar*/
+.showArtist::-webkit-scrollbar{
+    display: none;
+}
+
+.showArtist .artistCard{
+    margin-left: 40px;
+    margin-right: 60px;
+    position: relative;
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    border: 1px solid rgb(255 255 255 / 11%);
+    padding: 1%;
+    background: rgb(30, 42, 62);
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    box-shadow: 0px 1px 11px 2px rgba(0,0,0,0.2);
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* when hover, artistcard size change, Increase in size*/
+.showArtist .artistCard:hover{
+    transform: scale(1.05);
+}
+
+.artistCard:hover .artist-fade{
+    opacity: 1;
+  }
+
+.artist-fade{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0; 
+    width: 84%;
+    height: 70%;
+    border-radius: 20px;
+    background:linear-gradient(180deg,rgba(54,69,98,0) 10%,rgba(247, 248, 249, 0.4) 100%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 8%;
+    transition: 0.5s ease; 
+}
+
+.showArtist .artistCard img{
+    width: 180px;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.showArtist .artistCard .name{
+    width: 150px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+}

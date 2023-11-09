@@ -1,0 +1,97 @@
+.albums{
+    width: 100%;
+    height: 52%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(233, 107, 147, 0.8) 0%, #1D2671 100%);
+}
+
+.album-body { 
+    width: 94%;
+    padding: 3%;
+    display: flex;
+    /* Provide for flexible items to split rows or columns when necessary. */
+    flex-wrap: wrap;
+    overflow-y: auto;
+    justify-content: space-between;
+}
+
+
+.album-card { 
+    position: relative;
+    width: 15%;
+    height: 68%;
+    border-radius: 20px;
+    border: 1px solid rgba(54, 69, 98, 0.18);
+    padding: 1%;
+    margin-bottom: 2%;
+    background: linear-gradient(360deg,rgb(64 112 169 / 43%) 0%,rgba(54, 69, 98, 0)90% );
+    transition: all 0.2s ease;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+    
+}
+.album-card:hover{
+    transform: scale(1.02);
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.6);
+}
+.album-card:hover .album-fade{
+  opacity: 1;
+}
+.album-card:hover .leftinfo p{
+    color: #07070777;
+    z-index: 1;
+}
+
+.album-image { 
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 20px;
+}
+.album-title { 
+    font-weight: 800; 
+    font-size: 27px;
+    color: #a2a4a7;
+    margin:10px 0px 5px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    width: 200px;
+    white-space: nowrap;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.album-subtitle { 
+    font-weight: 400; 
+    font-size: 14px;
+    margin: 0px;
+    color:#3e3e3e7c;
+}
+.album-fade{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0; 
+    width: 85%;
+    height: 20%;
+    border-radius: 20px;
+    background:linear-gradient(180deg, rgba(54,69,98,0) 10%, rgba(208, 164, 233, 0.8) 100%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 8%;
+    transition: 0.5s ease;
+  }
+
+.albuminfo{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+}
+.albuminfo i{
+    font-size: 40px;
+}

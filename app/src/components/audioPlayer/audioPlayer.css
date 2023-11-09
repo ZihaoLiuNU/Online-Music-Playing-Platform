@@ -1,0 +1,63 @@
+.player-body {
+    width: 100%;
+    height: 44%;
+    margin: 3% 3%;
+    display: flex;
+}
+
+.player-left-body {
+    width: 28%;
+}
+
+.player-right-body {
+     width: 70%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.song-title {
+    text-align: center;
+    font-size: 58px;
+    font-weight: bold;
+    margin: 0px;
+    color: #c4d0e3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    position: relative;
+    top: -35px;
+    -webkit-box-orient: vertical;
+}
+
+.song-artist {
+    color: #80858d;
+    font-size: 19px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.player-right-bottom {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.song-duration {
+    width: 50%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+    display: flex;
+}
+
+.duration {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    color: #c4d0e3;
+}

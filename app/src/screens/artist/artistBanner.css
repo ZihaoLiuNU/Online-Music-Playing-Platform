@@ -1,0 +1,15 @@
+/* artist profile banner css
+    import banner img in it */
+.banner {
+    width: 100%;
+    height: 38%;
+    position: relative;
+}
+.banner .bannerimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

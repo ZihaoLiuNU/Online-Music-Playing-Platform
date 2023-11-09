@@ -1,0 +1,145 @@
+.trendinglist{
+    margin-top: 160px;
+}
+
+
+.trending-body{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    border-radius: 30px;
+    background: linear-gradient(163deg, rgb(255 180 225 / 82%) 20%, rgb(249 189 189 / 86%) 100% );
+}
+
+.body_contents::-webkit-scrollbar{
+    display: none;
+}
+.trending-body::-webkit-scrollbar{
+    display: none;
+}
+
+
+.intro{
+    margin:0 2rem;
+    display:  flex;
+    align-items: center;
+    gap:2rem;
+}
+.intro .trendImg{
+    height: 15rem;
+    box-shadow: rbga(0,0,0,0.25) 0px 25px 50px -12px;
+}
+.line{
+    margin-left: 30px;
+    margin-top:20px;
+    width: 95%;
+    height: 1.5px;
+    background-color: white;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    color: #e0dede;;
+}
+.details .title{
+    color:white;
+    font-size: 4rem;
+}
+
+.navbar2 .header_row{
+    display: grid;
+    grid-template-columns: 0.3fr 2fr 2fr 2fr 1fr 0.1fr;
+    color:#dddcdc;
+    margin: 0.1rem 0 0 0;
+    position: sticky;
+    top: 15vh;
+    padding: 1rem 3rem;
+    transition: 0.3s ease-in-out;
+}
+
+.songlist{
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+}
+
+
+
+.songlist .row{
+    padding: 0.5rem 1rem;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 1, 1);
+    font-size: 16px;
+}
+
+.songlist .row:hover{
+    background-color: rgba(80, 77, 77, 0.1);
+    border-radius: 20px;
+    cursor: pointer;
+    transform: translateX(-5px);
+}
+
+.songlist .row .col{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    width: 10px;
+    font-size: 22px;
+}
+
+
+.songlist .row .detail{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    width: 700px;
+    font-size: 22px;
+    margin-left: -65px;
+}
+
+.songlist .row .detail img{
+    height: 70px;
+    margin-right: 10px;
+    margin-left: 50px;
+}
+
+.songlist .row .detail .info {
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+}
+.songlist .row .detail .info .name{
+    width: 500px;
+}
+.songlist .row .detail .info .spanAritist{
+    width: 400px;
+}
+
+.songlist .row .album{
+    color: #ffffff;
+    margin-left: 320px;
+    width: 300px;
+    font-size: 22px;
+}
+.songlist .row .s_duration{
+    color: #ffffff;
+    margin-left: 50px;
+    width: 100px;
+    font-size: 22px;
+}
+
+.songlist .row .s_duration i {
+    font-size: 14px;
+    margin-right: 5px;
+}
+.songlist .row .favourite{
+    color: rgba(255,255,0,0.7);
+    filter: drop-shadow(0px 0px 4px rgba(255,255,0,0.7));
+    margin-left: 150px;
+    font-size: 22px;
+}
